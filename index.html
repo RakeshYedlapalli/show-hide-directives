@@ -1,0 +1,18 @@
+<html ng-app="showHideApp">
+
+<head>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <title>This is Hide show example</title>
+
+</head>
+
+<body>
+    <h1>This is Show Hide Example</h1>
+    <div ng-controller="showHideController as controller">
+        <input type="checkbox" ng-model="controller.isChecked"></input>
+        <p ng-show = "controller.isChecked">This is content</p>
+    </div>
+</body>
+
+</html>
